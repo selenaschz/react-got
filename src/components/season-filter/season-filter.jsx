@@ -3,7 +3,7 @@ function SeasonFilter( { season, onFilter }) {
     return (
             <div className="btn-group" role="group" aria-label="Basic outlined example">
             {seasons.map( s => (
-                <button key={s} type="button" className={`btn btn-outline-primary ${(season === s ? "active" : "")}`} onClick={ () => onFilter(s) }> 
+                <button key={s} type="button" className={`btn btn-outline-dark ${(season === s ? "active" : "")}`} onClick={ () => onFilter(s) }> 
                     S{s} 
                 </button>
             ))}
